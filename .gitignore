@@ -1,0 +1,6 @@
+fenics/ejemplos/ex1_poisson/poisson
+fenics/ejemplos/ex2_poisson_membrane/poisson_membrane
+fenics/ejemplos/ex4_heat_gaussian/heat_gaussian
+fenics/ejemplos/ex6_elasticity/elasticity
+fenics/ejemplos/ex8_navier_stokes_cylinder/navier_stokes_cylinder
+fenics/ejemplos/ex9_react/reaction_system
