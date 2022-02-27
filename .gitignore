@@ -2,5 +2,11 @@ fenics/ejemplos/ex1_poisson/poisson
 fenics/ejemplos/ex2_poisson_membrane/poisson_membrane
 fenics/ejemplos/ex4_heat_gaussian/heat_gaussian
 fenics/ejemplos/ex6_elasticity/elasticity
-fenics/ejemplos/ex8_navier_stokes_cylinder/navier_stokes_cylinder/
 fenics/ejemplos/ex9_react/reaction_system
+fenics/ejemplos/ex8_navier_cylinder/navier_stokes_cylinder/cylinder.xml.gz
+fenics/ejemplos/ex8_navier_cylinder/navier_stokes_cylinder/pressure.h5
+fenics/ejemplos/ex8_navier_cylinder/navier_stokes_cylinder/pressure.xdmf
+fenics/ejemplos/ex8_navier_cylinder/navier_stokes_cylinder/pressure_series.h5
+fenics/ejemplos/ex8_navier_cylinder/navier_stokes_cylinder/velocity.h5
+fenics/ejemplos/ex8_navier_cylinder/navier_stokes_cylinder/velocity.xdmf
+fenics/ejemplos/ex8_navier_cylinder/navier_stokes_cylinder/velocity_series.h5
