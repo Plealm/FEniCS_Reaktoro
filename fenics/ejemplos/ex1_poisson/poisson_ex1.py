@@ -21,7 +21,8 @@ Para solucionar un problema PDE, es necesario seguir los siguientes pasos:
 """
 
 # Creación de la grilla
-mesh = fe.UnitSquareMesh(100, 100)
+nx = ny = 100
+mesh = fe.UnitSquareMesh(nx, ny)
 # definición de una función discreta sobre el espacio
 V = fe.FunctionSpace(mesh, 'P', 1)
 

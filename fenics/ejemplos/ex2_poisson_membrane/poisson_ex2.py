@@ -11,8 +11,7 @@ Se soluciona la ecuación de poisson:
 
      - ∇² w = p
 
-                 (β²⋅x² + (y - R0)²)
-     p(x, y) = 4e
+     p(x, y) = 4*exp(β²⋅x² + (y - R0)²)
 
 Tal que p es una gausiana centrada en (0, 0.6).
 Con condiciones de contorno
@@ -26,7 +25,7 @@ mesh = ms.generate_mesh(domain, 64)
 # Creación de la función en el espacio
 V = fe.FunctionSpace(mesh, 'P', 2)
 
-# Definición de las constantes
+# Definición de las condiciones de frontera
 w_D = fe.Constant(0)
 
 
@@ -38,7 +37,7 @@ def boundary(x, on_boundary):
 # expresión de la frontera de Dirichlet
 bc = fe.DirichletBC(V, w_D, boundary)
 
-# Definición de varibles y del igual
+# Definición de los parametros de la función de presión p(x,y)
 beta = 8
 R0 = 0.6
 p = fe.Expression('4*exp(-pow(beta, 2)*(pow(x[0], 2) + pow(x[1] - R0, 2)))',
@@ -54,14 +53,15 @@ L = p*v*fe.dx
 w = fe.Function(V)
 fe.solve(a == L, w, bc)
 
-# graficación
+""" Here we examine the membrane's response to the pressure,
+    so it must transform this function into a finite element function"""
 p = fe.interpolate(p, V)
 plt.figure()
 D = fe.plot(w, title='Deflection')
 plt.colorbar(D)
 plt.figure()
-L = fe.plot(p, title='Load')
-plt.colorbar(L)
+Lo = fe.plot(p, title='Load')
+plt.colorbar(Lo)
 
 # Guardar la solución en un archivo formato vtk
 vtkfile_w = fe.File('poisson_membrane/deflection.pvd')
