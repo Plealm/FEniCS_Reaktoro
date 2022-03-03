@@ -79,8 +79,8 @@ L1 = fe.rhs(F1)
 
 # Definición del problema variacional para el segundo paso
 a2 = fe.dot(fe.nabla_grad(p), fe.nabla_grad(q))*fe.dx
-L2 = fe.dot(fe.nabla_grad(p_n), fe.nabla_grad(q))*fe.dx
-- (1/k)*fe.div(u_)*q*fe.dx
+L2 = fe.dot(fe.nabla_grad(p_n), fe.nabla_grad(q))*fe.dx \
+     - (1/k)*fe.div(u_)*q*fe.dx
 
 # Definición del problema variacional para el tercer paso
 a3 = fe.dot(u, v)*fe.dx
