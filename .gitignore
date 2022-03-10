@@ -12,8 +12,8 @@ fenics/ejemplos/ex8_navier_cylinder/navier_stokes_cylinder/velocity.xdmf
 fenics/ejemplos/ex8_navier_cylinder/navier_stokes_cylinder/velocity_series.h5
 fenics/ejemplos/ex3_heat/heat_solution.pdf
 fenics/ejemplos/ex5_nonlinear_poisson/nonlinear_poisson.pdf
-fenics/ejemplos/ex6_elasticity/elasticity_ex6.py
+fenics/ejemplos/ex6_elasticity/elasticidad_ex6.py
 fenics/ejemplos/ex6_elasticity/stress.png
 fenics/ejemplos/ex6_elasticity/u.png
 fenics/ejemplos/ex6_elasticity/u_magnitude.png
-fenics/ejemplos/ex7_navier_strokes/solucion.pdf
+"fenics/ejemplos/ex7_navier_strokes/soluci\303\263n.pdf"
